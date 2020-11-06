@@ -3,15 +3,6 @@
 // productArray([1,2,3]) -> 6 
 // productArray([1,2,3,10]) -> 60
 
-function productOfArray(array){
-    if(array.length === 0) return 1 
-    else{
-        let removedElement = array.shift()
-        return array[0] * productOfArray(array.slice(1))
-    }
-}
-
-
 function productOfArray(arr){
     if(arr.length === 0){
         return 1
