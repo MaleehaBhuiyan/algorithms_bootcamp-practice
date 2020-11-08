@@ -6,19 +6,17 @@
 
 
 function areThereDuplicates(){
-    let frequencyOfNums = {}
+    let frequencyCounter = {}
 
-    for(let i of arguments){
-        frequencyOfNums[i] = (frequencyOfNums[i] || 0) + 1 
+    for(let x in arguments){
+        frequencyCounter[arguments[x]] = (frequencyCounter[arguments[x]] || 0) + 1
     }
 
-    for(let key in frequencyOfNums){
-        if(frequencyOfNums[key] > 1){
-            return false  
-        }
-        else{
+    for(let key in frequencyCounter){
+        if(frequencyCounter[key] > 1){
             return true 
         }
     }
+    return false 
 }
 
