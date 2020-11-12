@@ -1,0 +1,7 @@
+1) Declare a function that takes in 2 arguments 
+2) Loop over the longer string 
+3) Loop over the shorter string 
+4) If the characters don't match, break out of the inner loop
+5) If the characters do match, keep going 
+6) If you complete the inner loop and find a match, increment the count of matches 
+7) Return count 
