@@ -11,17 +11,3 @@ string equal to the new string
     b) if not return false 
 */
 
-function isSubsequence(str1, str2){
-
-}
-
-function extractWord(str1, str2){
-    let pointer1 = str1[0]
-    let pointer2 = str2[0]
-    let i = 0 
-
-    while(i <= str2.length){
-        console.log(str2[i])
-        i++
-    }
-}
