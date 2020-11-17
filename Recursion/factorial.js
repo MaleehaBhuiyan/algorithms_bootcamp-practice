@@ -1,7 +1,7 @@
 function factorial(num){
     if(num === 1){
-        console.log("REACHED THE BASE CASE")
-        console.log("num: ", num)
+        console.log("num: ", num, 
+        "***REACHED THE BASE CASE***")
         return 1;
     }  
     console.log("num: ", num)
@@ -9,4 +9,8 @@ function factorial(num){
 }
 
 factorial(3)
+
+
+
+
 

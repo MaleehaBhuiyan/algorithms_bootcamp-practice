@@ -5,7 +5,15 @@
 
 function productOfArray(arr){
     if(arr.length === 0){
-        return 1
+        console.log("***BASE CASE***")
+        console.log(arr)
+        return 1 
     }
-    return arr[0] * productOfArray(arr.slice(1))
+    console.log("arr[0]: ", arr[0], "| Array: ", arr)
+    return arr[0] * productOfArray(arr.slice(1)) 
 }
+
+productOfArray([1,2,3])
+
+
+
