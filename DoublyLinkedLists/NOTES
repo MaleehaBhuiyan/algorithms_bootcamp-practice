@@ -5,7 +5,7 @@
         1) The pop method: In a singly linked list there is only one way to pop off the last item on the list. We must start from the beginning, find the second to last item and then pop that item off. However, with a doubly linked list, we can work in reverse. We can look at the last item and then word backwards to find the second to last item. 
         2) Reversing a list: reversing a doubly linked list is much easier than reversing a singly linked list. For a singly linked list there is no easy way of reversing it, you make need to store the values in an array and then reverse it for instance. In a doubly linked list you can jusy look at the .prev values. 
 
-• Doubly linked lists provide more flxibility but it takes up more memory because now we are storing a .next AND .prev 
+• Doubly linked lists provide more flexibility but it takes up more memory because now we are storing a .next AND .prev 
 
 
 
@@ -20,3 +20,26 @@ METHODS:
         • set the tail to be the newly created node
         • increment the length 
         • return the doubly linked list
+
+2) POPPING: removing a node from the end of the doubly linked list 
+        Pseudocode:
+        • If there is no head, return undefined
+        • Store the current tail in a variable to return later 
+        • If the length is 1, set the head and the tail to be null
+        • Update the tail to be the previous Node.
+        • Set the newTail's next equal to null 
+        • Decrement the length 
+        • Return the removed value
+
+3) SHIFTING: removing a node from the beginning of the Doubly Linked List 
+        Pseudocode:
+        • If length is 0, return undefined 
+        • Store the current headd property in a variable (we'll call it old head)
+        • If the length is one 
+                • set the head to be null 
+                • set the tail to be null 
+        • Update the head to be the next of the old head 
+        • Set the head's prev property to null 
+        • Decrement the length 
+        • Return the old head 
+
